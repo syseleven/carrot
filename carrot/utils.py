@@ -1,4 +1,10 @@
-from uuid import UUID, uuid4, _uuid_generate_random
+from uuid import UUID, uuid4
+
+try:
+    from uuid import _uuid_generate_random
+except ImportError:
+    _uuid_generate_random = None
+
 try:
     import ctypes
 except ImportError:
