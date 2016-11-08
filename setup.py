@@ -62,7 +62,7 @@ else:
     long_description = "See http://pypi.python.org/pypi/carrot"
 
 setup(
-    name='carrot',
+    name='syseleven.carrot',
     version=carrot.__version__,
     description=carrot.__doc__,
     author=carrot.__author__,
